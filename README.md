@@ -53,7 +53,7 @@ Octoprint plugin that reports metrics to influxDB: https://github.com/agrif/Octo
 Search for the InfluxDB in all available plugins. As for the configuration, the defaults worked for me.
 
 # set up grafana
-It should be listening on http://octopi.local:3000/. First create the influxdb datasource, then import the dashboard using its id.
+It should be listening on http://octopi.local:3000/. First create the influxdb datasource, then import the dashboard using its id - `11204`.
 
 # final tweaks
 For the dashboard, change the ip address in the iframe to octopi.local and also allow `GF_PANELS_DISABLE_SANITIZE_HTML=true` in the `/etc/grafana/grafana.ini` (on raspi). The weather widgets also need some tunning, but I am not using them.

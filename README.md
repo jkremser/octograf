@@ -28,6 +28,9 @@ influx -execute 'CREATE DATABASE octoprint'
 ```
 
 # allow the systemctl command to be run w/o the password
+
+This is ugly and I am probably crippling the security of my raspi here, but `¯\_(ツ)_/¯` It's not exposed on the internets.
+
 ```bash
 cat <<EOF | sudo tee /etc/polkit-1/localauthority/50-local.d/42-manage-units.pkla
 [systemd]
